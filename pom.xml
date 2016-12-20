@@ -15,6 +15,12 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>RELEASE</version>
+        </dependency>
     </dependencies>
 
 </project>
