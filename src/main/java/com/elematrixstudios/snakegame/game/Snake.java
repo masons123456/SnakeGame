@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.awt.Color;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Snake {
 
@@ -17,11 +19,22 @@ public class Snake {
     @Getter
     @Setter
     private Controller controller;
+    private List<BodyPart> body;
+    @Getter
+    @Setter
+    private Location location;
+
 
     public Snake(int length, Color color, Controller controller) {
         this.length = length;
         this.color = color;
         this.controller = controller;
+        this.location = new Location();
+
+        this.body = new ArrayList<>();
+        this.body.add(new BodyPart(BodyPartType.HEAD));
+        this.body.add(new BodyPart(BodyPartType.BODY));
+        this.body.add(new BodyPart(BodyPartType.TAIL));
     }
 
     public Snake() {
