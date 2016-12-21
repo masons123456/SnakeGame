@@ -1,6 +1,6 @@
 package com.elematrixstudios.snakegame.game;
 
-import com.elematrixstudios.snakegame.options.OptionsManager;
+import com.elematrixstudios.snakegame.options.OptionsHandler;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -38,11 +38,11 @@ public class Snake {
     }
 
     public Snake() {
-        this(OptionsManager.DEFAULT_SNAKE_LENGTH, OptionsManager.DEFAULT_SNAKE_COLOR, Controller.DUMMY);
+        this(OptionsHandler.DEFAULT_SNAKE_LENGTH, OptionsHandler.DEFAULT_SNAKE_COLOR, Controller.DUMMY);
     }
 
     public Snake(Controller controller) {
-        this(OptionsManager.DEFAULT_SNAKE_LENGTH, OptionsManager.DEFAULT_SNAKE_COLOR, controller);
+        this(OptionsHandler.DEFAULT_SNAKE_LENGTH, OptionsHandler.DEFAULT_SNAKE_COLOR, controller);
     }
 
     public void addLength() {

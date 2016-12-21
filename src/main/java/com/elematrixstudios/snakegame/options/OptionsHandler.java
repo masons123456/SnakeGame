@@ -1,7 +1,6 @@
 package com.elematrixstudios.snakegame.options;
 
 import com.elematrixstudios.snakegame.SnakeGame;
-import com.elematrixstudios.snakegame.game.Snake;
 import org.yaml.snakeyaml.Yaml;
 
 import java.awt.Color;
@@ -10,7 +9,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.util.HashMap;
 
 public class OptionsHandler {
