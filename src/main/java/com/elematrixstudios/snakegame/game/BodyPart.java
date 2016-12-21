@@ -1,6 +1,5 @@
 package com.elematrixstudios.snakegame.game;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

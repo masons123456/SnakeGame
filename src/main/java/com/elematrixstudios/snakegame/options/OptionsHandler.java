@@ -13,7 +13,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 
-public class OptionsManager {
+public class OptionsHandler {
 
     private SnakeGame main;
 
@@ -23,7 +23,7 @@ public class OptionsManager {
     private Yaml configFile;
     private HashMap<String, Object> config;
 
-    public OptionsManager(SnakeGame main) {
+    public OptionsHandler(SnakeGame main) {
         this.main = main;
 
         configFile = new Yaml();
